@@ -1,0 +1,4 @@
+../Core/Src/debounce.c:3:16:pressed_from_raw	16	static
+../Core/Src/debounce.c:7:6:debounce_init	24	static
+../Core/Src/debounce.c:17:12:debounce_update	32	static
+../Core/Src/debounce.c:50:9:debounce_is_pressed	16	static

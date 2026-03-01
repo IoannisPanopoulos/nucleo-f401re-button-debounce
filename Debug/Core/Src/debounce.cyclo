@@ -1,0 +1,4 @@
+../Core/Src/debounce.c:3:16:pressed_from_raw	3
+../Core/Src/debounce.c:7:6:debounce_init	3
+../Core/Src/debounce.c:17:12:debounce_update	9
+../Core/Src/debounce.c:50:9:debounce_is_pressed	3

@@ -1,0 +1,12 @@
+# STM32CubeIDE / 
+.metadata/
+
+# Build outputs
+Debug/
+Release/
+build/
+cmake-build-*/
+
+# OS
+.DS_Store
+Thumbs.db
