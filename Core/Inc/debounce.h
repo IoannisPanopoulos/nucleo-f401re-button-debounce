@@ -12,20 +12,17 @@ typedef enum {
 } db_event_t;
 
 typedef struct {
-    uint32_t debounce_ms;      // stable time required
-    uint8_t  active_high;      // 1: pressed=1, 0: pressed=0
-    uint8_t  stable_raw;       // last stable raw level (0/1)
-    uint8_t  last_raw;         // last observed raw level (0/1)
-    uint32_t last_change_ms;   // last time raw changed
-    uint8_t  initialized;      // internal
+    uint32_t debounce_ms;      
+    uint8_t  active_high;      
+    uint8_t  stable_raw;       
+    uint8_t  last_raw;        
+    uint32_t last_change_ms;   
+    uint8_t  initialized;      
 } debounce_t;
 
-// active_high:
-//   1 -> raw=1 means "pressed"
-//   0 -> raw=0 means "pressed"
+
 void debounce_init(debounce_t *d, uint32_t debounce_ms, uint8_t active_high);
 
-// Call whenever you sample the pin (polling or in an IRQ).
 // Returns an event when the *stable pressed state* changes.
 db_event_t debounce_update(debounce_t *d, uint8_t raw, uint32_t now_ms);
 
