@@ -1,4 +1,4 @@
-# Week 2 — NUCLEO-F401RE Button EXTI + Debounce (one toggle per press)
+#  NUCLEO-F401RE Button EXTI + Debounce (one toggle per press)
 
 Board: **NUCLEO-F401RE (STM32F401RE)**
 
